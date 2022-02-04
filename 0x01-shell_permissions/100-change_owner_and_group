@@ -1,2 +1,2 @@
 #!/bin/bash
-14. chown vincent:staff *
+chown vincent:staff *
