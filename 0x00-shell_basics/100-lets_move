@@ -1,2 +1,2 @@
 #!/bin/bash
-mv | grep "^[AZ]" | /tmp/u
+mv src/[A-Z]* /tmp/u
