@@ -1,2 +1,2 @@
 #!/bin/bash
-mv -v *[A-Z]* home/pacho/tmp/u
+mv *[A-Z]* home/pacho/tmp/u
