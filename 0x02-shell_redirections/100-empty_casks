@@ -1,2 +1,2 @@
 #!/bin/bash
-find / path / to / dest -type d -empty | head ls -a\n
+find . -empty -printf\n
