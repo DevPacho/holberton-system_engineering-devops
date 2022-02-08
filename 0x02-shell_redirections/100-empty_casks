@@ -1,2 +1,2 @@
 #!/bin/bash
-hola
+find   / path / to / dest -type d -empty | ls -a head\n
