@@ -239,7 +239,10 @@ $</code></pre>
 <pre><code>$ ./6-firstdirectory
 $ file /tmp/my_first_directory/
 /tmp/my_first_directory/: directory
-$</code></pre>
+$</code>6-firstdirectory</pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code></code></li>
+</ul>
 <br>
 <h2>7. Betty in my first directory</h2>
 <p>Move the file&nbsp;<code>betty</code> from&nbsp;<code>/tmp/</code> to&nbsp;<code>/tmp/my_first_directory</code>.</p>
@@ -248,6 +251,9 @@ $</code></pre>
 $ ls /tmp/my_first_directory/
 betty
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>7-movethatfile</code></li>
+</ul>
 <p><br></p>
 <h2>8. Bye bye Betty</h2>
 <p>Delete the file&nbsp;<code>betty</code>.</p>
@@ -258,6 +264,9 @@ $</code></pre>
 <pre><code>$ ./8-firstdelete
 $ ls /tmp/my_first_directory/
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>8-firstdelete</code></li>
+</ul>
 <br>
 <h2>9. Bye bye My first directory</h2>
 <p>Delete the directory&nbsp;<code>my_first_directory</code> that is in the&nbsp;<code>/tmp</code> directory.</p>
@@ -266,6 +275,9 @@ $</code></pre>
 $ file /tmp/my_first_directory
 /tmp/my_first_directory: cannot open `/tmp/my_first_directory&apos; (No such file or directory)
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>9-firstdirdeletion</code></li>
+</ul>
 <p><br></p>
 <h2>10. Back to the future</h2>
 <p>Write a script that changes the working directory to the previous one.</p>
@@ -278,9 +290,15 @@ julien@ubuntu:/var$ source ./10-back
 /tmp
 julien@ubuntu:/tmp$ pwd
 /tmp</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>10-back</code></li>
+</ul>
 <br>
 <h2>11. Lists</h2>
 <p>Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the&nbsp;<code>/boot</code> directory (in this order), in long format.&nbsp;</p>
+<ul>
+    <li><b>File:</b>&nbsp;<code>11-lists</code></li>
+</ul>
 <br>
 <h2>12. File type</h2>
 <p>Write a script that prints the type of the file named&nbsp;<code>iamafile</code>. The file&nbsp;<code>iamafile</code> will be in the&nbsp;<code>/tmp</code> directory when we will run your script.</p>
@@ -289,6 +307,9 @@ julien@ubuntu:/tmp$ pwd
 /tmp/iamafile: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=bd39c07194a778ccc066fc963ca152bdfaa3f971, stripped
 </code></pre>
 <p>Note that depending on the file, the output of your script will be different.</p>
+<ul>
+    <li><b>File:</b>&nbsp;<code>12-file_type</code></li>
+</ul>
 <br>
 <h2>13. We are symbols, and inhabit symbols</h2>
 <p>Create a symbolic link to&nbsp;<code>/bin/ls</code>, named&nbsp;<code>__ls__</code>. The symbolic link should be created in the current working directory.</p>
@@ -302,12 +323,19 @@ total 144
 drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
 drwxrwxrwt 12 root   root   139264 Sep 20 03:24 ..
 lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -&gt; /bin/ls</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>13-symbolic_link</code></li>
+</ul>
 <br>
 <h2>14. Copy HTML files</h2>
 <p>Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.</p>
 <p>You can consider that all HTML files have the extension&nbsp;<code>.html</code></p>
+<ul>
+    <li><b>File:</b>&nbsp;<code>14-copy_html</code></li>
+</ul>
 <br>
 <h2>15. Let's move</h2>
+<p><b><i>Advanced task</i></b><p>
 <p>Create a script that moves all files beginning with an uppercase letter to the directory&nbsp;<code>/tmp/u</code>.</p>
 <p>You can assume that the directory&nbsp;<code>/tmp/u</code> will exist when we will run your script</p>
 <pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
@@ -335,8 +363,12 @@ drwxrwxr-x 2 ubuntu ubuntu 4096 Sep 20 03:33 .
 drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 -rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 My_file
 -rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 Elif_ym</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>100-lets_move</code></li>
+</ul>
 <br>
 <h2>16. Clean Emacs</h2>
+<p><b><i>Advanced task</i></b><p>
 <p>Create a script that deletes all files in the current working directory that end with the character&nbsp;<code>~</code>.</p>
 <pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls
 main.c  main.c~  Makefile~
@@ -344,8 +376,12 @@ ubuntu@ip-172-31-63-244:/tmp/sym$ ./101-clean_emacs
 ubuntu@ip-172-31-63-244:/tmp/emacs$ ls
 main.c
 ubuntu@ip-172-31-63-244:/tmp/emacs$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>101-clean_emacs</code></li>
+</ul>
 <br>
 <h2>17. Tree</h2>
+<p><b><i>Advanced task</i></b><p>
 <p>Create a script that creates the directories&nbsp;<code>welcome/</code>,&nbsp;<code>welcome/to/</code> and&nbsp;<code>welcome/to/school</code> in the current directory.</p>
 <p>You are only allowed to use two spaces (and lines) in your script, not more.</p>
 <pre><code>julien@ubuntu:/tmp/h$ ls -l
@@ -368,6 +404,7 @@ drwxrwxr-x 2 julien julien 4096 Sep 20 12:11 school
 julien@ubuntu:/tmp/h$ </code></pre>
 <br>
 <h2>18. Life is a series of commas, not periods</h2>
+<p><b><i>Advanced task</i></b><p>
 <p>Write a command that lists all the files and directories of the current directory, separated by commas (<code>,</code>).</p>
 <ul>
     <li>Directory names should end with a slash (<code>/</code>)</li>
@@ -386,3 +423,6 @@ ubuntu@ubuntu:~/$ ./103-commas
 ./, ../, 0-commas, 0-commas-checks/, 1-empty_casks, 2-gifs, 3-directories, 4-zeros, 5-rot13, 6-odd, 7-sort_rot13, Makefile, quote, .test, test_dir/, test.var
 
 ubuntu@ubuntu:~/$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>103-commas</code></li>
+</ul>
