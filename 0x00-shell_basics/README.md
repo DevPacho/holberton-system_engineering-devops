@@ -1,5 +1,4 @@
 <h1>0x00. Shell, basics</h1>
-<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/205/image.jpg">
 <h2>About Bash projects</h2>
 <p>Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.</p>
 <p></p>
