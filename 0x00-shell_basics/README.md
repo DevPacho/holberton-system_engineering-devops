@@ -241,7 +241,7 @@ $ file /tmp/my_first_directory/
 /tmp/my_first_directory/: directory
 $</code>6-firstdirectory</pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code></code></li>
+    <li><b>File:</b>&nbsp;<code>6-firstdirectory</code></li>
 </ul>
 <br>
 <h2>7. Betty in my first directory</h2>
