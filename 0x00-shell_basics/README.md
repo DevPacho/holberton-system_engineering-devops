@@ -147,6 +147,9 @@ julien@ubuntu:/tmp$ </code></pre>
 <pre><code>$ ./0-current_working_directory
 /0x00-shell_basics
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>0-current_working_directory</code></li>
+</ul>
 <br>
 <h2>1. What&rsquo;s in there?</h2>
 <p>Display the contents list of your current directory.</p>
@@ -155,6 +158,9 @@ $</code></pre>
 Applications    Documents   Dropbox Movies Pictures
 Desktop Downloads   Library Music Public
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>1-listit</code></li>
+</ul>
 <br>
 <h2>2. There is no place like home</h2>
 <p>Write a script that changes the working directory to the user&rsquo;s home directory.</p>
@@ -169,6 +175,9 @@ julien@ubuntu:/tmp$ source ./2-bring_me_home
 julien@ubuntu:~$ pwd
 /home/julien
 julien@ubuntu:~$ </code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>2-bring_me_home</code></li>
+</ul>
 <br>
 <h2>3. The long format</h2>
 <p>Display current directory contents in a long format</p>
@@ -180,6 +189,9 @@ total 32
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>3-listfiles</code></li>
+</ul>
 <br>
 <h2>4. Hidden files</h2>
 <p>Display current directory contents, including hidden files (starting with&nbsp;<code>.</code>). Use the long format.</p>
@@ -194,6 +206,9 @@ drwxr-xr-x@ 43 sylvain staff 1462 Jan 25 00:19 ..
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:41 4-listmorefiles
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>4-listmorefiles</code></li>
+</ul>
 <br>
 <h2>5. I love numbers</h2>
 <p>Display current directory contents.</p>
@@ -214,6 +229,9 @@ drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
 -rwxr-xr-x@ 1 501 20 18 Jan 25 00:41 4-listmorefiles
 -rwxr-xr-x@ 1 501 20 18 Jan 25 00:43 5-listfilesdigitonly
 $</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code>5-listfilesdigitonly</code></li>
+</ul>
 <br>
 <h2>6. Welcome</h2>
 <p>Create a script that creates a directory named&nbsp;<code>my_first_directory</code> in the&nbsp;<code>/tmp/</code> directory.</p>
@@ -223,3 +241,148 @@ $ file /tmp/my_first_directory/
 /tmp/my_first_directory/: directory
 $</code></pre>
 <br>
+<h2>7. Betty in my first directory</h2>
+<p>Move the file&nbsp;<code>betty</code> from&nbsp;<code>/tmp/</code> to&nbsp;<code>/tmp/my_first_directory</code>.</p>
+<p>Example:</p>
+<pre><code>$ ./7-movethatfile
+$ ls /tmp/my_first_directory/
+betty
+$</code></pre>
+<p><br></p>
+<h2>8. Bye bye Betty</h2>
+<p>Delete the file&nbsp;<code>betty</code>.</p>
+<ul>
+    <li>The file&nbsp;<code>betty</code> is in&nbsp;<code>/tmp/my_first_directory</code></li>
+</ul>
+<p>Example:</p>
+<pre><code>$ ./8-firstdelete
+$ ls /tmp/my_first_directory/
+$</code></pre>
+<br>
+<h2>9. Bye bye My first directory</h2>
+<p>Delete the directory&nbsp;<code>my_first_directory</code> that is in the&nbsp;<code>/tmp</code> directory.</p>
+<p>Example:</p>
+<pre><code>$ ./9-firstdirdeletion
+$ file /tmp/my_first_directory
+/tmp/my_first_directory: cannot open `/tmp/my_first_directory&apos; (No such file or directory)
+$</code></pre>
+<p><br></p>
+<h2>10. Back to the future</h2>
+<p>Write a script that changes the working directory to the previous one.</p>
+<pre><code>julien@ubuntu:/tmp$ pwd
+/tmp
+julien@ubuntu:/tmp$ cd /var
+julien@ubuntu:/var$ pwd
+/var
+julien@ubuntu:/var$ source ./10-back
+/tmp
+julien@ubuntu:/tmp$ pwd
+/tmp</code></pre>
+<br>
+<h2>11. Lists</h2>
+<p>Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the&nbsp;<code>/boot</code> directory (in this order), in long format.&nbsp;</p>
+<br>
+<h2>12. File type</h2>
+<p>Write a script that prints the type of the file named&nbsp;<code>iamafile</code>. The file&nbsp;<code>iamafile</code> will be in the&nbsp;<code>/tmp</code> directory when we will run your script.</p>
+<p>Example</p>
+<pre><code>ubuntu@ip-172-31-63-244:~$ ./12-file_type
+/tmp/iamafile: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=bd39c07194a778ccc066fc963ca152bdfaa3f971, stripped
+</code></pre>
+<p>Note that depending on the file, the output of your script will be different.</p>
+<br>
+<h2>13. We are symbols, and inhabit symbols</h2>
+<p>Create a symbolic link to&nbsp;<code>/bin/ls</code>, named&nbsp;<code>__ls__</code>. The symbolic link should be created in the current working directory.</p>
+<pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 144
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:24 ..
+ubuntu@ip-172-31-63-244:/tmp/sym$./13-symbolic_link
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 144
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:24 ..
+lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -&gt; /bin/ls</code></pre>
+<br>
+<h2>14. Copy HTML files</h2>
+<p>Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.</p>
+<p>You can consider that all HTML files have the extension&nbsp;<code>.html</code></p>
+<br>
+<h2>15. Let's move</h2>
+<p>Create a script that moves all files beginning with an uppercase letter to the directory&nbsp;<code>/tmp/u</code>.</p>
+<p>You can assume that the directory&nbsp;<code>/tmp/u</code> will exist when we will run your script</p>
+<pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 148
+drwxrwxr-x  3 ubuntu ubuntu   4096 Sep 20 03:33 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:26 ..
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 My_file
+lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -&gt; /bin/ls
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 Elif_ym
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 random_file
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la /tmp/u
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep 20 03:33 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
+ubuntu@ip-172-31-63-244:/tmp/sym$ ./100-lets_move
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 148
+drwxrwxr-x  3 ubuntu ubuntu   4096 Sep 20 03:33 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:26 ..
+lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -&gt; /bin/ls
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 random_file
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la /tmp/u
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep 20 03:33 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
+-rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 My_file
+-rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 Elif_ym</code></pre>
+<br>
+<h2>16. Clean Emacs</h2>
+<p>Create a script that deletes all files in the current working directory that end with the character&nbsp;<code>~</code>.</p>
+<pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls
+main.c  main.c~  Makefile~
+ubuntu@ip-172-31-63-244:/tmp/sym$ ./101-clean_emacs
+ubuntu@ip-172-31-63-244:/tmp/emacs$ ls
+main.c
+ubuntu@ip-172-31-63-244:/tmp/emacs$</code></pre>
+<br>
+<h2>17. Tree</h2>
+<p>Create a script that creates the directories&nbsp;<code>welcome/</code>,&nbsp;<code>welcome/to/</code> and&nbsp;<code>welcome/to/school</code> in the current directory.</p>
+<p>You are only allowed to use two spaces (and lines) in your script, not more.</p>
+<pre><code>julien@ubuntu:/tmp/h$ ls -l
+total 4
+-rwxrw-r-- 1 julien julien 44 Sep 20 12:09 102-tree
+julien@ubuntu:/tmp/h$ wc -l 102-tree 
+2 102-tree
+julien@ubuntu:/tmp/h$ head -1 102-tree 
+#!/bin/bash
+julien@ubuntu:/tmp/h$ tr -cd &apos; &apos; &lt; 102-tree | wc -c # you do not have to understand this yet, but the result should be 2, 1 or 0
+2
+julien@ubuntu:/tmp/h$ ./102-tree 
+julien@ubuntu:/tmp/h$ ls
+102-tree  welcome
+julien@ubuntu:/tmp/h$ ls welcome/
+to
+julien@ubuntu:/tmp/h$ ls -l welcome/to
+total 4
+drwxrwxr-x 2 julien julien 4096 Sep 20 12:11 school
+julien@ubuntu:/tmp/h$ </code></pre>
+<br>
+<h2>18. Life is a series of commas, not periods</h2>
+<p>Write a command that lists all the files and directories of the current directory, separated by commas (<code>,</code>).</p>
+<ul>
+    <li>Directory names should end with a slash (<code>/</code>)</li>
+    <li>Files and directories starting with a dot (<code>.</code>) should be listed</li>
+    <li>The listing should be alpha ordered, except for the directories&nbsp;<code>.</code> and&nbsp;<code>..</code> which should be listed at the very beginning</li>
+    <li>Only digits and letters are used to sort; Digits should come first</li>
+    <li>You can assume that all the files we will test with will have at least one letter or one digit</li>
+    <li>The listing should end with a new line</li>
+</ul>
+<pre><code>ubuntu@ubuntu:~/$ ls -a
+
+.  ..  0-commas  0-commas-checks  1-empty_casks  2-gifs  3-directories  4-zeros  5-rot13  6-odd  7-sort_rot13  Makefile  quote  .test  test_dir  test.var
+
+ubuntu@ubuntu:~/$ ./103-commas
+
+./, ../, 0-commas, 0-commas-checks/, 1-empty_casks, 2-gifs, 3-directories, 4-zeros, 5-rot13, 6-odd, 7-sort_rot13, Makefile, quote, .test, test_dir/, test.var
+
+ubuntu@ubuntu:~/$</code></pre>
