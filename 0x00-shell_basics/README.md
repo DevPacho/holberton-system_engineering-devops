@@ -431,3 +431,8 @@ ubuntu@ubuntu:~/$</code></pre>
 <ul>
     <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/103-commas" target="_blank">103-commas</b></i></a></code></li>
 </ul>
+<br>
+<h2>License & Copyright</h2>
+<i>©. Project provided by: <a href="https://www.holbertonschool.com/" target="_blank"><b>Holberton School</a></i></b>
+<br>
+<i>©. Project developed by:<b> Francisco Ramírez </b><b>|&nbsp;<a href="https://github.com/FranRM15" target="_blank"> GitHub</a> <b>|</b>&nbsp;<a href="https://twitter.com/FranciscoR_15" target = "_blank" rel="nofollow"> Twitter</b></a></p>
