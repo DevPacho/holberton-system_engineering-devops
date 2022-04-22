@@ -1,5 +1,7 @@
 <h1>0x00. Shell, basics</h1>
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/205/image.jpg">
+<p>©. <a href="https://www.holbertonschool.com/" target="_blank"><i><b>Image source</a></i></b></p>
+<br>
 <h2>About Bash projects</h2>
 <p>Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.</p>
 <p></p>
@@ -148,7 +150,7 @@ julien@ubuntu:/tmp$ </code></pre>
 /0x00-shell_basics
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>0-current_working_directory</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/0-current_working_directory" target="_blank">0-current_working_directory</b></i></a></code></li>
 </ul>
 <br>
 <h2>1. What&rsquo;s in there?</h2>
@@ -159,7 +161,7 @@ Applications    Documents   Dropbox Movies Pictures
 Desktop Downloads   Library Music Public
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>1-listit</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/1-listit" target="_blank">1-listit</b></i></a></code></li>
 </ul>
 <br>
 <h2>2. There is no place like home</h2>
@@ -176,7 +178,7 @@ julien@ubuntu:~$ pwd
 /home/julien
 julien@ubuntu:~$ </code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>2-bring_me_home</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/2-bring_me_home" target="_blank">2-bring_me_home</b></i></a></code></li>
 </ul>
 <br>
 <h2>3. The long format</h2>
@@ -190,7 +192,7 @@ total 32
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>3-listfiles</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/3-listfiles" target="_blank">3-listfiles</b></i></a></code></li>
 </ul>
 <br>
 <h2>4. Hidden files</h2>
@@ -207,7 +209,7 @@ drwxr-xr-x@ 43 sylvain staff 1462 Jan 25 00:19 ..
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:41 4-listmorefiles
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>4-listmorefiles</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/4-listmorefiles" target="_blank">4-listmorefiles</b></i></a></code></li>
 </ul>
 <br>
 <h2>5. I love numbers</h2>
@@ -230,7 +232,7 @@ drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
 -rwxr-xr-x@ 1 501 20 18 Jan 25 00:43 5-listfilesdigitonly
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>5-listfilesdigitonly</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/5-listfilesdigitonly" target="_blank">5-listfilesdigitonly</b></i></a></code></li>
 </ul>
 <br>
 <h2>6. Welcome</h2>
@@ -241,7 +243,7 @@ $ file /tmp/my_first_directory/
 /tmp/my_first_directory/: directory
 $</code>6-firstdirectory</pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>6-firstdirectory</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/6-firstdirectory" target="_blank">6-firstdirectory</b></i></a></code></li>
 </ul>
 <br>
 <h2>7. Betty in my first directory</h2>
@@ -252,7 +254,7 @@ $ ls /tmp/my_first_directory/
 betty
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>7-movethatfile</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/7-movethatfile" target="_blank">7-movethatfile</b></i></a></code></li>
 </ul>
 <p><br></p>
 <h2>8. Bye bye Betty</h2>
@@ -265,7 +267,7 @@ $</code></pre>
 $ ls /tmp/my_first_directory/
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>8-firstdelete</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/8-firstdelete" target="_blank">8-firstdelete</b></i></a></code></li>
 </ul>
 <br>
 <h2>9. Bye bye My first directory</h2>
@@ -276,7 +278,7 @@ $ file /tmp/my_first_directory
 /tmp/my_first_directory: cannot open `/tmp/my_first_directory&apos; (No such file or directory)
 $</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>9-firstdirdeletion</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/9-firstdirdeletion" target="_blank">9-firstdirdeletion</b></i></a></code></li>
 </ul>
 <p><br></p>
 <h2>10. Back to the future</h2>
@@ -291,13 +293,13 @@ julien@ubuntu:/var$ source ./10-back
 julien@ubuntu:/tmp$ pwd
 /tmp</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>10-back</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/10-back" target="_blank">10-back</b></i></a></code></li>
 </ul>
 <br>
 <h2>11. Lists</h2>
 <p>Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the&nbsp;<code>/boot</code> directory (in this order), in long format.&nbsp;</p>
 <ul>
-    <li><b>File:</b>&nbsp;<code>11-lists</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/11-lists" target="_blank">11-lists</b></i></a></code></li>
 </ul>
 <br>
 <h2>12. File type</h2>
@@ -308,7 +310,7 @@ julien@ubuntu:/tmp$ pwd
 </code></pre>
 <p>Note that depending on the file, the output of your script will be different.</p>
 <ul>
-    <li><b>File:</b>&nbsp;<code>12-file_type</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/12-file_type" target="_blank">12-file_type</b></i></a></code></li>
 </ul>
 <br>
 <h2>13. We are symbols, and inhabit symbols</h2>
@@ -324,14 +326,14 @@ drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
 drwxrwxrwt 12 root   root   139264 Sep 20 03:24 ..
 lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -&gt; /bin/ls</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>13-symbolic_link</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/13-symbolic_link" target="_blank">13-symbolic_link</b></i></a></code></li>
 </ul>
 <br>
 <h2>14. Copy HTML files</h2>
 <p>Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.</p>
 <p>You can consider that all HTML files have the extension&nbsp;<code>.html</code></p>
 <ul>
-    <li><b>File:</b>&nbsp;<code>14-copy_html</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/14-copy_html" target="_blank">14-copy_html</b></i></a></code></li>
 </ul>
 <br>
 <h2>15. Let's move</h2>
@@ -364,7 +366,7 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 -rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 My_file
 -rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 Elif_ym</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>100-lets_move</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/100-lets_move" target="_blank">100-lets_move</b></i></a></code></li>
 </ul>
 <br>
 <h2>16. Clean Emacs</h2>
@@ -377,7 +379,7 @@ ubuntu@ip-172-31-63-244:/tmp/emacs$ ls
 main.c
 ubuntu@ip-172-31-63-244:/tmp/emacs$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>101-clean_emacs</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/101-clean-emacs" target="_blank">101-clean_emacs</b></i></a></code></li>
 </ul>
 <br>
 <h2>17. Tree</h2>
@@ -402,6 +404,9 @@ julien@ubuntu:/tmp/h$ ls -l welcome/to
 total 4
 drwxrwxr-x 2 julien julien 4096 Sep 20 12:11 school
 julien@ubuntu:/tmp/h$ </code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/102-tree" target="_blank">102-tree</b></i></a></code></li>
+</ul>
 <br>
 <h2>18. Life is a series of commas, not periods</h2>
 <p><b><i>Advanced task</i></b><p>
@@ -424,5 +429,5 @@ ubuntu@ubuntu:~/$ ./103-commas
 
 ubuntu@ubuntu:~/$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>103-commas</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x00-shell_basics/103-commas" target="_blank">103-commas</b></i></a></code></li>
 </ul>
