@@ -12,4 +12,6 @@
 <h2>License & Copyright</h2>
 <i>©. The projects in this repository were provided by: <a href="https://www.holbertonschool.com/" target="_blank"><b>Holberton School</a></i></b>
 <br>
-<i>©. The projects in this repository were developed by:<b> Francisco Ramírez </b><b>|&nbsp;<a href="https://github.com/FranRM15" target="_blank"> GitHub</a> <b>|</b>&nbsp;<a href="https://twitter.com/FranciscoR_15" target = "_blank" rel="nofollow">Twitter</b></a></p>
+<i>©. The projects in this repository were developed by:<b> Francisco Ramírez </b><b>|&nbsp;<a href="https://github.com/FranRM15" target="_blank"> GitHub</a> <b>|</b>&nbsp;<a href="https://twitter.com/FranciscoR_15" target = "_blank" rel="nofollow"> Twitter</b></a></p>
+
+Testing link in a new page <p>Dale un vistazo <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.</p>
