@@ -1,5 +1,7 @@
 <h1>0x01. Shell, permissions</h1>
 <img src="https://linuxcommand.org/images/file_permissions.png">
+<p>©. <a href="https://linuxcommand.org/lc3_lts0090.php" target="_blank"><i><b>Image source</a></i></b></p>
+<br>
 <div>
     <h2>About&nbsp;Bash&nbsp;projects</h2>
     <p>Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.</p>
@@ -69,7 +71,7 @@
 9
 julien@ubuntu:/tmp/h$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>0-iam_betty</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/0-iam_betty" target="_blank">0-iam_betty</b></i></a></code></li>
 </ul>
 <br>
 <h2>1. Who am I</h2>
@@ -78,7 +80,7 @@ julien@ubuntu:/tmp/h$</code></pre>
 julien
 julien@ubuntu:/tmp/h$ </code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>1-who_am_i</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/1-who_am_i" target="_blank">1-who_am_i</b></i></a></code></li>
 </ul>
 <br>
 <h2>2. Groups</h2>
@@ -89,7 +91,7 @@ julien@ubuntu:/tmp/h$
 </code></pre>
 <p>Note: depending on the user, you will get a different output.</p>
 <ul>
-    <li><b>File:</b>&nbsp;<code>2-groups</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/2-groups" target="_blank">2-groups</b></i></a></code></li>
 </ul>
 <br>
 <h2>3. New owner</h2>
@@ -105,13 +107,13 @@ total 4
 -rw-rw-r-- 1 betty  julien  0 Sep 20 14:18 hello
 julien@ubuntu:/tmp/h$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>3-new_owner</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/3-new_owner" target="_blank">3-new_owner</b></i></a></code></li>
 </ul>
 <br>
 <h2>4. Empty!</h2>
 <p>Write a script that creates an empty file called&nbsp;<code>hello</code>.&nbsp;</p>
 <ul>
-    <li><b>File:</b>&nbsp;<code>4-empty</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/4-empty" target="_blank">4-empty</b></i></a></code></li>
 </ul>
 <br>
 <h2>5. Execute</h2>
@@ -132,7 +134,7 @@ total 8
 -rwxrw-r-- 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>5-execute</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/5-execute" target="_blank">5-execute</b></i></a></code></li>
 </ul>
 <br>
 <h2>6. Multiple permissions</h2>
@@ -151,7 +153,7 @@ total 8
 -r-xr-xr-- 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>6-multiple_permissions</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/6-multiple_permissions" target="_blank">6-multiple_permissions</b></i></a></code></li>
 </ul>
 <br>
 <h2>7. Everybody!</h2>
@@ -171,7 +173,7 @@ total 8
 -rwxr-x--x 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ </code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>7-everybody</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/7-everybody" target="_blank">7-everybody</b></i></a></code></li>
 </ul>
 <br>
 <h2>8. James Bond</h2>
@@ -193,7 +195,7 @@ total 8
 -------rwx 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>8-James_Bond</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/8-James_Bond" target="_blank">8-James_Bond</b></i></a></code></li>
 </ul>
 <br>
 <h2>9. John Doe</h2>
@@ -205,7 +207,7 @@ julien@ubuntu:/tmp/h$</code></pre>
     <li>You are not allowed to use commas for this script</li>
 </ul>
 <ul>
-    <li><b>File:</b>&nbsp;<code>9-John_Doe</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/9-John_Doe" target="_blank">9-John_Doe</b></i></a></code></li>
 </ul>
 <br>
 <h2>10. Look in the mirror</h2>
@@ -229,7 +231,7 @@ julien@ubuntu:/tmp/h$
 </code></pre>
 <p>Note: the mode of&nbsp;<code>olleh</code> will not always be 664. Make sure your script works for any mode.</p>
 <ul>
-    <li><b>File:</b>&nbsp;<code>10-mirror_permissions</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/10-mirror_permissions" target="_blank">10-mirror_permissions</b></i></a></code></li>
 </ul>
 <br>
 <h2>11. Directories</h2>
@@ -251,7 +253,131 @@ drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
 -rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$</code></pre>
 <ul>
-    <li><b>File:</b>&nbsp;<code>11-directories_permissions</code></li>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/11-directories_permissions" target="_blank">11-directories_permissions</b></i></a></code></li>
 </ul>
 <br>
 <h2>12. More directories</h2>
+<p>Create a script that creates a directory called <code>my_dir</code> with permissions 751 in the working directory.</p>
+<pre><code>julien@ubuntu:/tmp/h$ ls -l
+total 20
+-rwxrwxr-x 1 julien julien   39 Sep 20 14:59 12-directory_permissions
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./12-directory_permission s
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   39 Sep 20 14:59 12-directory_permissions
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/12-directory_permissions" target="_blank">12-directory_permissions</b></i></a></code></li>
+</ul>
+<br>
+<h2>13. Change group</h2>
+<p>Write a script that changes the group owner to&nbsp;<code>school</code> for the file&nbsp;<code>hello</code></p>
+<ul>
+    <li>The file&nbsp;<code>hello</code> will be in the working directory</li>
+</ul>
+<pre><code>julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   34 Sep 20 15:03 13-change_group
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ sudo ./13-change_group 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien      34 Sep 20 15:03 13-change_group
+drwx--x--x 2 julien julien    4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien    4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien    4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien    4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien school   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/13-change_group" target="_blank">13-change_group</b></i></a></code></li>
+</ul>
+<br>
+<h2>14. Owner and group</h2>
+<p>Write a script that changes the owner to&nbsp;<code>vincent</code> and the group owner to&nbsp;<code>staff</code> for all the files and directories in the working directory.&nbsp;</p>
+<pre><code>julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   36 Sep 20 15:06 100-change_owner_and_group
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ sudo ./100-change_owner_and_group 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 vincent staff   36 Sep 20 15:06 100-change_owner_and_group
+drwx--x--x 2 vincent staff 4096 Sep 20 14:49 dir0
+drwx--x--x 2 vincent staff 4096 Sep 20 14:49 dir1
+drwx--x--x 2 vincent staff 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 vincent staff 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 vincent staff   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/100-change_owner_and_group" target="_blank">100-change_owner_and_group</b></i></a></code></li>
+</ul>
+<br>
+<h2>15. Symbolic links</h2>
+<p>Write a script that changes the owner and the group owner of&nbsp;<code>_hello</code> to&nbsp;<code>vincent</code> and&nbsp;<code>staff</code> respectively.</p>
+<ul>
+    <li>The file&nbsp;<code>_hello</code> is in the working directory</li>
+    <li>The file&nbsp;<code>_hello</code> is a symbolic link</li>
+</ul>
+<pre><code>julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   44 Sep 20 15:12 101-symbolic_link_permissions
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+lrwxrwxrwx 1 julien julien    5 Sep 20 15:10 _hello -&gt; hello
+julien@ubuntu:/tmp/h$ sudo ./101-symbolic_link_permissions 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien      44 Sep 20 15:12 101-symbolic_link_permissions
+-rw-rw-r-- 1 julien julien      23 Sep 20 14:25 hello
+lrwxrwxrwx 1 vincent  staff    5 Sep 20 15:10 _hello -&gt; hello
+julien@ubuntu:/tmp/h$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/101-symbolic_link_permissions" target="_blank">101-symbolic_link_permissions</b></i></a></code></li>
+</ul>
+<br>
+<h2>16. If only</h2>
+<p>Write a script that changes the owner of the file&nbsp;<code>hello</code> to&nbsp;<code>vincent</code> only if it is owned by the user&nbsp;<code>guillaume</code>.</p>
+<ul>
+    <li>The file&nbsp;<code>hello</code> will be in the working directory</li>
+</ul>
+<pre><code>julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien    julien      47 Sep 20 15:18 102-if_only 
+-rw-rw-r-- 1 guillaume julien      23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ sudo ./102-if_only 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien      47 Sep 20 15:18 102-if_only 
+-rw-rw-r-- 1 vincent  julien      23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/102-if_only" target="_blank">102-if_only</b></i></a></code></li>
+</ul>
+<br>
+<h2>17. Star Wars</h2>
+<p>Write a script that will play the StarWars IV episode in the terminal.&nbsp;</p>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x01-shell_permissions/103-Star_Wars" target="_blank">103-Star_Wars</b></i></a></code></li>
+</ul>
+<br>
+<h2>License & Copyright</h2>
+<i>©. Project provided by: <a href="https://www.holbertonschool.com/" target="_blank"><b>Holberton School</a></i></b>
+<br>
+<i>©. Project developed by:<b> Francisco Ramírez </b><b>|&nbsp;<a href="https://github.com/FranRM15" target="_blank"> GitHub</a> <b>|</b>&nbsp;<a href="https://twitter.com/FranciscoR_15" target = "_blank" rel="nofollow"> Twitter</b></a></p>
