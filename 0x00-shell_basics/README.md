@@ -145,7 +145,7 @@ julien@ubuntu:/tmp$ </code></pre>
 <h1>Tasks</h1>
 <h2>0. Where am I?</h2>
 <p>Write a script that prints the absolute path name of the current working directory.</p>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./0-current_working_directory
 /0x00-shell_basics
 $</code></pre>
@@ -155,7 +155,7 @@ $</code></pre>
 <br>
 <h2>1. What&rsquo;s in there?</h2>
 <p>Display the contents list of your current directory.</p>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./1-listit
 Applications    Documents   Dropbox Movies Pictures
 Desktop Downloads   Library Music Public
@@ -169,6 +169,7 @@ $</code></pre>
 <ul>
     <li>You are not allowed to use any shell variables</li>
 </ul>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>julien@ubuntu:/tmp$ pwd
 /tmp
 julien@ubuntu:/tmp$ echo $HOME
@@ -183,7 +184,7 @@ julien@ubuntu:~$ </code></pre>
 <br>
 <h2>3. The long format</h2>
 <p>Display current directory contents in a long format</p>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./3-listfiles
 total 32
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
@@ -197,7 +198,7 @@ $</code></pre>
 <br>
 <h2>4. Hidden files</h2>
 <p>Display current directory contents, including hidden files (starting with&nbsp;<code>.</code>). Use the long format.</p>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./4-listmorefiles
 total 32
 drwxr-xr-x@ 6 sylvain staff 204 Jan 25 00:29 .
@@ -219,7 +220,7 @@ $</code></pre>
     <li>with user and group IDs displayed numerically</li>
     <li>And hidden files (starting with .)</li>
 </ul>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./5-listfilesdigitonly
 total 32
 drwxr-xr-x@ 6 501 20 204 Jan 25 00:29 .
@@ -237,7 +238,7 @@ $</code></pre>
 <br>
 <h2>6. Welcome</h2>
 <p>Create a script that creates a directory named&nbsp;<code>my_first_directory</code> in the&nbsp;<code>/tmp/</code> directory.</p>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./6-firstdirectory
 $ file /tmp/my_first_directory/
 /tmp/my_first_directory/: directory
@@ -248,7 +249,7 @@ $</code>6-firstdirectory</pre>
 <br>
 <h2>7. Betty in my first directory</h2>
 <p>Move the file&nbsp;<code>betty</code> from&nbsp;<code>/tmp/</code> to&nbsp;<code>/tmp/my_first_directory</code>.</p>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./7-movethatfile
 $ ls /tmp/my_first_directory/
 betty
@@ -262,7 +263,7 @@ $</code></pre>
 <ul>
     <li>The file&nbsp;<code>betty</code> is in&nbsp;<code>/tmp/my_first_directory</code></li>
 </ul>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./8-firstdelete
 $ ls /tmp/my_first_directory/
 $</code></pre>
@@ -272,7 +273,7 @@ $</code></pre>
 <br>
 <h2>9. Bye bye My first directory</h2>
 <p>Delete the directory&nbsp;<code>my_first_directory</code> that is in the&nbsp;<code>/tmp</code> directory.</p>
-<p>Example:</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>$ ./9-firstdirdeletion
 $ file /tmp/my_first_directory
 /tmp/my_first_directory: cannot open `/tmp/my_first_directory&apos; (No such file or directory)
@@ -283,6 +284,7 @@ $</code></pre>
 <p><br></p>
 <h2>10. Back to the future</h2>
 <p>Write a script that changes the working directory to the previous one.</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>julien@ubuntu:/tmp$ pwd
 /tmp
 julien@ubuntu:/tmp$ cd /var
@@ -304,7 +306,7 @@ julien@ubuntu:/tmp$ pwd
 <br>
 <h2>12. File type</h2>
 <p>Write a script that prints the type of the file named&nbsp;<code>iamafile</code>. The file&nbsp;<code>iamafile</code> will be in the&nbsp;<code>/tmp</code> directory when we will run your script.</p>
-<p>Example</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>ubuntu@ip-172-31-63-244:~$ ./12-file_type
 /tmp/iamafile: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=bd39c07194a778ccc066fc963ca152bdfaa3f971, stripped
 </code></pre>
@@ -315,6 +317,7 @@ julien@ubuntu:/tmp$ pwd
 <br>
 <h2>13. We are symbols, and inhabit symbols</h2>
 <p>Create a symbolic link to&nbsp;<code>/bin/ls</code>, named&nbsp;<code>__ls__</code>. The symbolic link should be created in the current working directory.</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 144
 drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
@@ -340,6 +343,7 @@ lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -&gt; /bin/ls</code><
 <p><b><i>Advanced task</i></b><p>
 <p>Create a script that moves all files beginning with an uppercase letter to the directory&nbsp;<code>/tmp/u</code>.</p>
 <p>You can assume that the directory&nbsp;<code>/tmp/u</code> will exist when we will run your script</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 148
 drwxrwxr-x  3 ubuntu ubuntu   4096 Sep 20 03:33 .
@@ -372,6 +376,7 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 <h2>16. Clean Emacs</h2>
 <p><b><i>Advanced task</i></b><p>
 <p>Create a script that deletes all files in the current working directory that end with the character&nbsp;<code>~</code>.</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>ubuntu@ip-172-31-63-244:/tmp/sym$ ls
 main.c  main.c~  Makefile~
 ubuntu@ip-172-31-63-244:/tmp/sym$ ./101-clean_emacs
@@ -386,6 +391,7 @@ ubuntu@ip-172-31-63-244:/tmp/emacs$</code></pre>
 <p><b><i>Advanced task</i></b><p>
 <p>Create a script that creates the directories&nbsp;<code>welcome/</code>,&nbsp;<code>welcome/to/</code> and&nbsp;<code>welcome/to/school</code> in the current directory.</p>
 <p>You are only allowed to use two spaces (and lines) in your script, not more.</p>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>julien@ubuntu:/tmp/h$ ls -l
 total 4
 -rwxrw-r-- 1 julien julien 44 Sep 20 12:09 102-tree
@@ -419,6 +425,7 @@ julien@ubuntu:/tmp/h$ </code></pre>
     <li>You can assume that all the files we will test with will have at least one letter or one digit</li>
     <li>The listing should end with a new line</li>
 </ul>
+<p><b><i><u>Output example:</u></i></b></p>
 <pre><code>ubuntu@ubuntu:~/$ ls -a
 
 .  ..  0-commas  0-commas-checks  1-empty_casks  2-gifs  3-directories  4-zeros  5-rot13  6-odd  7-sort_rot13  Makefile  quote  .test  test_dir  test.var
