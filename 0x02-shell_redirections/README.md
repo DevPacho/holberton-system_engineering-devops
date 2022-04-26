@@ -784,3 +784,34 @@ ubuntu@ip-172-31-63-244:~/0x02-shell_redirections$</code></pre>
 <ul>
     <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x02-shell_redirections/100-empty_casks" target="_blank">100-empty_casks</b></i></a></code></li>
 </ul>
+<br>
+<h2>25. Acrostic</h2>
+<p><b><i>Advanced task</i></b><p>
+<p>An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. <a href="https://en.wikipedia.org/wiki/Acrostic" target="_blank">Read more</a></p>
+<p>Create a script that decodes acrostics that use the first letter of each line.</p>
+<ul>
+    <li>The ‘decoded’ message has to end with a new line</li>
+    <li>You are not allowed to use <code>grep</code>, <code>egrep</code>, <code>fgrep</code> or <code>rgrep</code></li>
+</ul>
+<p><b><i><u>Output example:</u></i></b></p>
+<pre><code>julien@ubuntu:/tmp/0x02$ cat An\ Acrostic 
+Elizabeth it is in vain you say
+Love not"—thou sayest it in so sweet a way:
+In vain those words from thee or L.E.L.
+Zantippe's talents had enforced so well:
+Ah! if that language from thy heart arise,
+Breath it less gently forth—and veil thine eyes.
+Endymion, recollect, when Luna tried
+To cure his love—was cured of all beside—
+His follie—pride—and passion—for he died.
+julien@ubuntu:/tmp/0x02$ ./102-acrostic < An\ Acrostic 
+ELIZABETH
+julien@ubuntu:/tmp/0x02$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x02-shell_redirections/102-acrostic" target="_blank">102-acrostic</b></i></a></code></li>
+</ul>
+<br>
+<h2>License & Copyright</h2>
+<i>©. Project provided by: <a href="https://www.holbertonschool.com/" target="_blank"><b>Holberton School</a></i></b>
+<br>
+<i>©. Project developed by:<b> Francisco Ramírez </b><b>|&nbsp;<a href="https://github.com/FranRM15" target="_blank"> GitHub</a> <b>|</b>&nbsp;<a href="https://twitter.com/FranciscoR_15" target = "_blank" rel="nofollow"> Twitter</b></a></p>
