@@ -90,4 +90,291 @@
   
 <h1>Tasks</h1>
 <h2>0. "o"</h2>
-   
+<p>Create a script that creates an alias.</p>
+<ul>
+    <li>Name: <code>ls</code></li>
+    <li>Value: <code>rm *</code></li>
+</ul>
+    <p><b><i><u>Output example:</u></i></b></p>
+<pre><code>julien@ubuntu:/tmp/0x03$ ls
+0-alias  file1  file2
+julien@ubuntu:/tmp/0x03$ source ./0-alias 
+julien@ubuntu:/tmp/0x03$ ls
+julien@ubuntu:/tmp/0x03$ \ls
+julien@ubuntu:/tmp/0x03$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/0-alias" target="_blank">0-alias</b></i></a></code></li>
+</ul>
+<br>
+<h2>1. Hello you</h2>
+    <p>Create a script that prints <code>hello user</code>, where user is the current Linux user.</p>
+    <p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@ubuntu:/tmp/0x03$ id
+uid=1000(julien) gid=1000(julien) groups=1000(julien),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+julien@ubuntu:/tmp/0x03$ ./1-hello_you 
+hello julien
+julien@ubuntu:/tmp/0x03$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/1-hello_you" target="_blank">1-hello_you</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>2. The path to success is to take massive, determined action</h2>
+    <p>Add <code>/action</code> to the <code>PATH</code>. <code>/action</code> should be the last directory the shell looks into when looking for a program.</p>
+    <p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@ubuntu:/tmp/0x03$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+julien@ubuntu:/tmp/0x03$ source ./2-path 
+julien@ubuntu:/tmp/0x03$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/action
+julien@ubuntu:/tmp/0x03$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/2-path" target="_blank">2-path</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>3. If the path be beautiful, let us not ask where it leads</h2>
+    <p>Create a script that counts the number of directories in the <code>PATH</code>.</p>
+    <p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@ubuntu:/tmp/0x03$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+julien@ubuntu:/tmp/0x03$ . ./3-paths 
+11
+julien@ubuntu:/tmp/0x03$ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
+julien@ubuntu:/tmp/0x03$ . ./3-paths 
+12
+julien@ubuntu:/tmp/0x03$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/3-paths" target="_blank">3-paths</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>4. Global variables</h2>
+    <p>Create a script that lists environment variables.</p>
+    <p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@ubuntu:/tmp/0x03$ source ./4-global_variables
+CC=gcc
+CDPATH=.:~:/usr/local:/usr:/
+CFLAGS=-O2 -fomit-frame-pointer
+COLORTERM=gnome-terminal
+CXXFLAGS=-O2 -fomit-frame-pointer
+DISPLAY=:0
+DOMAIN=hq.garrels.be
+e=
+TOR=vi
+FCEDIT=vi
+FIGNORE=.o:~
+G_BROKEN_FILENAMES=1
+GDK_USE_XFT=1
+GDMSESSION=Default
+GNOME_DESKTOP_SESSION_ID=Default
+GTK_RC_FILES=/etc/gtk/gtkrc:/nethome/franky/.gtkrc-1.2-gnome2
+GWMCOLOR=darkgreen
+GWMTERM=xterm
+HISTFILESIZE=5000
+history_control=ignoredups
+HISTSIZE=2000
+HOME=/nethome/franky
+HOSTNAME=octarine.hq.garrels.be
+INPUTRC=/etc/inputrc
+IRCNAME=franky
+JAVA_HOME=/usr/java/j2sdk1.4.0
+LANG=en_US
+LDFLAGS=-s
+LD_LIBRARY_PATH=/usr/lib/mozilla:/usr/lib/mozilla/plugins
+LESSCHARSET=latin1
+LESS=-edfMQ
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+LEX=flex
+LOCAL_MACHINE=octarine
+LOGNAME=franky
+[...]
+julien@ubuntu:/tmp/0x03$</code></pre>
+    <ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/4-global_variables" target="_blank">4-global_variables</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>5. Local variables</h2>
+    <p>Create a script that lists all local variables and environment variables, and functions.</p>
+    <p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@ubuntu:/tmp/0x03$ . ./5-local_variables
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:histappend:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_COMPLETION_COMPAT_DIR=/etc/bash_completion.d
+BASH_LINENO=()
+BASH_REMATCH=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="3" [2]="46" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='4.3.46(1)-release'
+CLUTTER_IM_MODULE=xim
+COLUMNS=133
+COMPIZ_CONFIG_PROFILE=ubuntu
+COMP_WORDBREAKS=$' \t\n"\'><=;|&(:'
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Fg27Lr20bq
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+DESKTOP_SESSION=ubuntu
+[...]
+julien@ubuntu:/tmp/0x03$</code></pre>
+    <ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/5-local_variables" target="_blank">5-local_variables</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>6. Local variable</h2>
+    <p>Create a script that creates a new local variable.</p>
+<ul>
+    <li>Name: <code>BEST</code></li>
+    <li>Value: <code>SCHOOL</code></li>
+</ul>
+    <ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/6-create_local_variable" target="_blank">6-create_local_variable</b></i></a></code></li>
+</ul>
+<br>
+    <h2>7. Global variable</h2>
+    <p>Create a script that creates a new global variable.</p>
+<ul>
+    <li>Name: <code>BEST</code></li>
+    <li>Value: <code>SCHOOL</code></li>
+</ul>
+    <ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/7-create_global_variable" target="_blank">7-create_global_variable</b></i></a></code></li>
+</ul>
+<br>
+    <h2>8. Every addition to true knowledge is an addition to human power</h2>
+    <p>Write a script that prints the result of the addition of 128 with the value stored in the environment variable <code>TRUEKNOWLEDGE</code>, followed by a new line.</p>
+    <p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@production-503e7013:~$ export TRUEKNOWLEDGE=1209
+julien@production-503e7013:~$ ./8-true_knowledge | cat -e
+1337$
+julien@production-503e7013:~$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/8-true_knowledge" target="_blank">8-true_knowledge</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>9. Divide and rule</h2>
+    <p>Write a script that prints the result of&nbsp;<code>POWER</code> divided by&nbsp;<code>DIVIDE</code>, followed by a new line.</p>
+<ul>
+    <li><code>POWER</code> and&nbsp;<code>DIVIDE</code> are environment variables</li>
+</ul>
+    <p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@production-503e7013:~$ export POWER=42784
+julien@production-503e7013:~$ export DIVIDE=32
+julien@production-503e7013:~$ ./9-divide_and_rule | cat -e
+1337$
+julien@production-503e7013:~$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/9-divide_and_rule" target="_blank">9-divide_and_rule</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>10. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath</h2>
+    <p>Write a script that displays the result of&nbsp;<code>BREATH</code> to the power&nbsp;<code>LOVE</code></p>
+<ul>
+    <li><code>BREATH</code> and&nbsp;<code>LOVE</code> are environment variables</li>
+    <li>The script should display the result, followed by a new line</li>
+</ul>
+<p><b><i><u>Output example:</u></i></b></p>
+    <pre><code>julien@production-503e7013:~/$ export BREATH=4
+julien@production-503e7013:~/$ export LOVE=3
+julien@production-503e7013:~/$ ./10-love_exponent_breath
+64
+julien@production-503e7013:~/$</code></pre>
+    <ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/10-love_exponent_breath" target="_blank">10-love_exponent_breath</b></i></a></code></li>
+</ul>
+    <br>
+    <h2>11. There are 10 types of people in the world -- Those who understand binary, and those who don't</h2>
+    <p>Write a script that converts a number from base 2 to base 10.</p>
+<ul>
+    <li>The number in base 2 is stored in the environment variable&nbsp;<code>BINARY</code></li>
+    <li>The script should display the number in base 10, followed by a new line</li>
+</ul>
+<p><b><i><u>Output example:</u></i></b></p>
+<pre><code>julien@production-503e7013:~/$ export BINARY=10100111001
+julien@production-503e7013:~/$ ./11-binary_to_decimal
+1337
+julien@production-503e7013:~/$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/11-binary_to_decimal" target="_blank">11-binary_to_decimal</b></i></a></code></li>
+</ul>
+<br>
+<h2>12. Combination</h2>
+<p>Create a script that prints all possible combinations of two letters, except&nbsp;<code>oo</code>.</p>
+<ul>
+    <li>Letters are lower cases, from&nbsp;<code>a</code> to&nbsp;<code>z</code></li>
+    <li>One combination per line</li>
+    <li>The output should be alpha ordered, starting with&nbsp;<code>aa</code></li>
+    <li>Do not print&nbsp;<code>oo</code></li>
+    <li>Your script file should contain maximum 64 characters</li>
+</ul>
+<p><b><i><u>Output example:</u></i></b></p>
+<pre><code>julien@ubuntu:/tmp/0x03$ echo $((26 ** 2 -1))
+675
+julien@ubuntu:/tmp/0x03$ ./12-combinations | wc -l
+675
+julien@ubuntu:/tmp/0x03$ 
+julien@ubuntu:/tmp/0x03$ ./12-combinations | tail -303 | head -10
+oi
+oj
+ok
+ol
+om
+on
+op
+oq
+or
+os
+julien@ubuntu:/tmp/0x03$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/12-combinations" target="_blank">12-combinations</b></i></a></code></li>
+</ul>
+<br>
+<h2>13. Floats</h2>
+<p>Write a script that prints a number with two decimal places, followed by a new line.</p>
+<p>The number will be stored in the environment variable&nbsp;<code>NUM</code>.</p>
+<p><b><i><u>Output example:</u></i></b></p>
+<pre><code>ubuntu@ip-172-31-63-244:~/0x03$ export NUM=0
+ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
+0.00
+ubuntu@ip-172-31-63-244:~/0x03$ export NUM=98
+ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
+98.00
+ubuntu@ip-172-31-63-244:~/0x03$ export NUM=3.14159265359
+ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
+3.14
+ubuntu@ip-172-31-63-244:~/0x03$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/13-print_float" target="_blank">13-print_float</b></i></a></code></li>
+</ul>
+<br>
+<h2>14. Decimal to Hexadecimal</h2>
+<p><b><i>Advanced task</i></b><p>
+<p>Write a script that converts a number from base 10 to base 16.</p>
+<ul>
+    <li>The number in base 10 is stored in the environment variable&nbsp;<code>DECIMAL</code></li>
+    <li>The script should display the number in base 16, followed by a new line</li>
+</ul>
+<pre><code>julien@production-503e7013:~/$ export DECIMAL=16
+julien@production-503e7013:~/$ ./100-decimal_to_hexadecimal
+10
+julien@production-503e7013:~/$ export DECIMAL=1337
+julien@production-503e7013:~/$ ./100-decimal_to_hexadecimal | cat -e
+539$
+julien@production-503e7013:~/$ export DECIMAL=15
+julien@production-503e7013:~/$ ./100-decimal_to_hexadecimal | cat -e
+f$
+julien@production-503e7013:~/$</code></pre>
+<ul>
+    <li><b>File:</b>&nbsp;<code><i><b><a href="https://github.com/FranRM15/holberton-system_engineering-devops/blob/main/0x03-shell_variables_expansions/100-decimal_to_hexadecimal" target="_blank">100-decimal_to_hexadecimal</b></i></a></code></li>
+</ul>
+<br>
+<h2>15. What is the difference between a hard link and a symbolic link?</h2>
+<p><b><i>Advanced task</i></b><p>
+<p>Write a blog post explaining what are hard and symbolic links on Linux, how to create them, and what is the difference between the two. Use examples to illustrate.</p>
+<ul>
+    <li>Have at least one picture, at the top of the blog post</li>
+    <li>Publish your blog post on Medium or LinkedIn</li>
+    <li>Share your blog post at least on LinkedIn</li>
+</ul>
+<ul>
+    <li><b>You can read my blog giving an answer to the previous problematizing question</b>&nbsp;<code><i><b><a href="https://www.linkedin.com/pulse/hard-symbolic-links-francisco-jos%25C3%25A9-ram%25C3%25ADrez-mojica" target="_blank">HERE ON MY LINKEDIN!</b></i></a></code></li>
+</ul>
