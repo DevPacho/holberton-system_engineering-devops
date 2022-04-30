@@ -378,3 +378,8 @@ julien@production-503e7013:~/$</code></pre>
 <ul>
     <li><b>You can read my blog giving an answer to the previous problematizing question</b>&nbsp;<code><i><b><a href="https://www.linkedin.com/pulse/hard-symbolic-links-francisco-jos%25C3%25A9-ram%25C3%25ADrez-mojica" target="_blank">HERE ON MY LINKEDIN!</b></i></a></code></li>
 </ul>
+<br>
+<h2>License & Copyright</h2>
+<i>©. Project provided by: <a href="https://www.holbertonschool.com/" target="_blank"><b>Holberton School</a></i></b>
+<br>
+<i>©. Project developed by:<b> Francisco Ramírez </b><b>|&nbsp;<a href="https://github.com/FranRM15" target="_blank"> GitHub</a> <b>|</b>&nbsp;<a href="https://twitter.com/FranciscoR_15" target = "_blank" rel="nofollow"> Twitter</b></a></p>
