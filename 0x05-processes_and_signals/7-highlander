@@ -6,5 +6,5 @@ while [ $to_infinity ]
 do
     echo "To infinity and beyond"
     sleep 2
-    echo "I am invincible!!!" SIGTERM
+    trap "I am invincible!!!" SIGTERM
 done
