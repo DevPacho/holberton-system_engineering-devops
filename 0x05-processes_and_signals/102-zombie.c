@@ -15,7 +15,7 @@ int infinite_while(void)
 }
 
 /**
-* create_zombies - function that creates zombie processes.
+* main - function that creates zombie processes.
 * Return: Succes.
 */
 
@@ -26,7 +26,7 @@ int main(void)
 	for (creating_zombies = 0; creating_zombies < 5; creating_zombies++)
 	{
 		if (fork() == 0)
-			printf("Zombie process created, PID: %d\n", getpid());
+			fprintf(stdout, "Zombie process created, PID: %d\n", getpid());
 	}
 	infinite_while();
 	return (0);
