@@ -26,7 +26,7 @@ int main(void)
 	for (creating_zombies = 0; creating_zombies < 5; creating_zombies++)
 	{
 		if (fork() == 0)
-			dprintf(1, "Zombie process created, PID: %d\n", getpid());
+			printf("Zombie process created, PID: %d\n", getpid()), exit(EXIT_SUCCESS);
 	}
 	infinite_while();
 	return (0);
