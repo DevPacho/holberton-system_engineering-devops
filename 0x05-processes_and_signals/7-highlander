@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script that displays a message indefinitely, make a copy and kill processes.
+
+to_infinity=0
+while [ $to_infinity ]
+do
+    echo "To infinity and beyond"
+    sleep 2
+    echo "I am invincible!!!" SIGTERM
+done
