@@ -21,9 +21,9 @@ int infinite_while(void)
 
 int main(void)
 {
-		int creating_zombies;
+	int creating_zombies;
 
-	for (creating_zombies = 0; creating_zombies < 6; creating_zombies++)
+	for (creating_zombies = 0; creating_zombies < 5; creating_zombies++)
 	{
 		if (fork() == 0)
 			printf("Zombie process created, PID: %d\n", getpid());
