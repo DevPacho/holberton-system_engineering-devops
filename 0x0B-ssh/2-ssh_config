@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Connecting to a server without a password.
+
+eval $(ssh-agent)
+ssh-add
