@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configuring nginx and modifying the current page content.
+
+sudo apt update
+sudo apt install nginx
+sudo listen 80 default_server
+echo "Hello World" > /var/www/html/index.nginx-debian.html
