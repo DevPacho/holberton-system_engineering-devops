@@ -2,6 +2,6 @@
 
 file_line {'disable password login':
     ensure => 'absent',
-    line   => 'PasswordAuthentication yes',
-    path   => '/etc/ssh/ssh_config',
+    line   => 'PasswordAuthentication no',
+    path   => '~/.ssh/school',
 }
