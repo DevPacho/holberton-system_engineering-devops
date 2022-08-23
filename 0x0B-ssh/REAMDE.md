@@ -1,1 +1,0 @@
-# Managing servers via SSH!
