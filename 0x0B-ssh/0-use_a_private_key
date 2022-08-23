@@ -2,4 +2,4 @@
 # Script that uses SSH to connect to a server using a private key
 # and a specific user.
 
-ssh -i ubuntu@54.234.162.16
+ssh ubuntu@54.234.162.16
