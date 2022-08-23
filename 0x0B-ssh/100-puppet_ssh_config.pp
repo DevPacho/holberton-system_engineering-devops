@@ -5,11 +5,11 @@ file { '/etc/ssh/ssh_config':
 }
 
 exec { 'Identity'
-    command => 'echo "    IdentityFile ~/.ssh/school" >> /etc/ssh/ssh_config"'
+    command => '/usr/bin/echo "    IdentityFile ~/.ssh/school" >> /etc/ssh/ssh_config'
     provider => 'shell',
 }
 
 exec { 'No password login'
-    command => 'echo "    PasswordAuthentication no" >> /etc/ssh/ssh_config"'
+    command => '/usr/bin/echo "    PasswordAuthentication no" >> /etc/ssh/ssh_config'
     provider => 'shell',
 }
