@@ -5,9 +5,9 @@ file { '/etc/ssh/sshd_config':
 }
 
 exec { 'Identity'
-    command => 'echo ssh -i ~/.ssh/school > /etc/ssh/ssh_config'
+    command => 'echo ssh -i ~/.ssh/school >> /etc/ssh/ssh_config'
 }
 
 exec { 'No password login'
-    command => 'echo PasswordAuthentication no > /etc/ssh/ssh_config'
+    command => 'echo PasswordAuthentication no >> /etc/ssh/ssh_config'
 }
