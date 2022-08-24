@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Configuring nginx and modifying the current page content.
-
-sudo apt -y update
-sudo apt -y install nginx
-echo "Hello World" > index.html
-sudo mv index.html /var/www/html/
-service nginx start
