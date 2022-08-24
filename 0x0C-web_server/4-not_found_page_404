@@ -5,5 +5,5 @@ sudo apt -y update
 sudo apt -y install nginx
 echo "Ceci n'est pas une page" > my404error.html
 sudo mv my404error.html /var/www/html/
-sudo sed -i "/listen 80 default_server/a rewrite ^/redirect_me my404error.html =404 permanent;" /etc/nginx/sites-available/default
+sudo sed -i "/listen 80 default_server/a rewrite ^/redirect_me my404error.html permanent =404;" /etc/nginx/sites-available/default
 sudo service nginx restart
