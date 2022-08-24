@@ -6,6 +6,6 @@ sudo apt -y install nginx
 echo "Hello World" > index.html
 sudo mv index.html /var/www/html/
 echo "Ceci n'est pas une page" > my404error.html
-sudo mv my404error /var/www/html/
+sudo mv my404error.html /var/www/html/
 sudo sed -i "/listen 80 default_server;/a error_page 404 /error404.html;" /etc/nginx/sites-available/default
 sudo service nginx restart
