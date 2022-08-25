@@ -9,5 +9,5 @@ echo "Ceci n'est pas une page" > my404error.html
 sudo mv my404error.html /var/www/html/
 sudo sed -i "/listen 80 default_server/a rewrite ^/redirect_me https://github.com/DevPacho permanent;" /etc/nginx/sites-available/default
 sudo sed -i "/listen 80 default_server;/ a error_page 404 /my404error.html;" /etc/nginx/sites-available/default
-sudo sed -i "/# as directory, then fall back to displaying a 404./ a add_header X-Served-By $hostname" /etc/nginx/sites-available/default
+sudo sed -i "/# as directory, then fall back to displaying a 404./ a add_header X-Served-By $HOSTNAME" /etc/nginx/sites-available/default
 sudo service nginx restart
