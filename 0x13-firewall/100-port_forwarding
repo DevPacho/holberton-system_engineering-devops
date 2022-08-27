@@ -8,7 +8,7 @@
 #   ufw-before-forward
 #
 
-# ADDED nat table rules
+# Setting up the port forwards
 *nat
 :PREROUTING ACCEPT [0:0]
 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
