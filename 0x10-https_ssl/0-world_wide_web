@@ -8,6 +8,7 @@ subdomains () {
         dig lb-01.$1 | grep -A1 'ANSWER SECTION:' | awk '/IN/ {printf "The subdomain lb-01 is a %s record and points to %s\n", $4, $5}'
         dig Web-01.$1 | grep -A1 'ANSWER SECTION:' | awk '/IN/ {printf "The subdomain web-01 is a %s record and points to %s\n", $4, $5}'
         dig Web-02.$1 | grep -A1 'ANSWER SECTION:' | awk '/IN/ {printf "The subdomain web-02 is a %s record and points to %s\n", $4, $5}'
+
     elif [ "$#" -eq 2 ]
     then
         dig www.$1 | grep -A1 'ANSWER SECTION:' | awk '/IN/ {printf "The subdomain www is a %s record and points to %s\n", $4, $5}'
