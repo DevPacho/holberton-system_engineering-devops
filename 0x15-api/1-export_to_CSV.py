@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     response_todos = requests.get(todos_id).json()
 
-    with open(filepath , "w") as file:
+    with open(filepath, "w") as file:
         writer = csv.writer(file, delimiter=",", quoting=csv.QUOTE_ALL)
 
         for task in response_todos:
