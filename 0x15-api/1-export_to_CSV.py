@@ -2,8 +2,8 @@
 """Using the previous '0-gather_data_from_an_API.py' file, this script
 is extended to export data in the CSV format."""
 
-import requests
 import csv
+import requests
 from sys import argv
 
 if __name__ == "__main__":
@@ -22,11 +22,8 @@ if __name__ == "__main__":
 
     with open(f"{filepath}", "w") as file:
         writer = csv.writer(file, delimiter=",", quoting=csv.QUOTE_ALL)
-        data_to_export = f"{id}", f"{username}"
 
         for task in response_todos:
             tasks_completed = task.get("completed")
             task_title = task.get("title")
-            data_to_export += f"{tasks_completed}", f"{task_title}"
-
-            writer.writerow(data_to_export)
+            writer.writerow([id, username, tasks_completed, task_title])
