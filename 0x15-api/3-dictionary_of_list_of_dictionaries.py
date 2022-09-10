@@ -36,4 +36,4 @@ if __name__ == "__main__":
         data_in_json[users_data.get("id")] = data_to_export
 
     with open(filepath, "w") as file:
-        file.write(json.dumps(data_in_json))
+        json.dump(data_in_json, file)
