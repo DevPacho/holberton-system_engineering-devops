@@ -35,4 +35,4 @@ if __name__ == "__main__":
 
             data_in_json = {}
             data_in_json[users_data.get("id")] = data_to_export
-        file.write(json.dumps(data_in_json))
+        json.dump(data_in_json, file)
