@@ -27,9 +27,9 @@ if __name__ == "__main__":
             tasks_completed = task.get("completed")
             task_title = task.get("title")
 
-            tasks_formatted = {"task": task_title, "completed": tasks_completed, 
-                                "username": username}
-            data_to_export.append(tasks_formatted)
+            data_formatted = {"task": task_title, "completed": tasks_completed,
+                              "username": username}
+            data_to_export.append(data_formatted)
 
         data_in_json = {id: data_to_export}
         file.write(json.dumps(data_in_json))
