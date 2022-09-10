@@ -12,7 +12,7 @@ if __name__ == "__main__":
     users = "https://jsonplaceholder.typicode.com/users/{}".format(employee_ID)
     todos_id = "https://jsonplaceholder.typicode.com/users/{}/todos".format(
         employee_ID)
-    filepath = f"{argv[1]}.csv"
+    filepath = "{}.csv".format(employee_ID)
 
     response_users = requests.get(users).json()
     id = response_users.get("id")
@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     response_todos = requests.get(todos_id).json()
 
-    with open(f"{filepath}", "w") as file:
+    with open(filepath , "w") as file:
         writer = csv.writer(file, delimiter=",", quoting=csv.QUOTE_ALL)
 
         for task in response_todos:
