@@ -11,6 +11,7 @@ if __name__ == "__main__":
     users = "https://jsonplaceholder.typicode.com/users/"
     todos_id = "https://jsonplaceholder.typicode.com/todos"
     filepath = "todo_all_employees.json"
+    data_in_json = {} 
 
     response_users = requests.get(users).json()
     # id = response_users.get("id")
@@ -18,7 +19,6 @@ if __name__ == "__main__":
 
     response_todos = requests.get(todos_id).json()
 
-    data_in_json = {} 
     for users_data in response_users:
         data_to_export = []
         username = users_data.get("username")
