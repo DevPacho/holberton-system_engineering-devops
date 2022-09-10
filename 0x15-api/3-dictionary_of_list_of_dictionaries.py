@@ -18,8 +18,6 @@ if __name__ == "__main__":
 
     response_todos = requests.get(todos_id).json()
 
-    data_in_json = {}
-
     for users_data in response_users:
         data_to_export = []
         username = users_data.get("username")
@@ -30,10 +28,12 @@ if __name__ == "__main__":
 
             if task.get("userId") == users_data.get("id"):
                 data_formatted = {"username": username,
-                            "task": task_title,
-                            "completed": tasks_completed}
+                                  "task": task_title,
+                                  "completed": tasks_completed}
                 data_to_export.append(data_formatted)
+
+        data_in_json = {} 
         data_in_json[users_data.get("id")] = data_to_export
 
-    with open('todo_all_employees.json', mode='w') as f:
-        json.dump(data_in_json, f)
+    with open(filepath, "w") as file:
+        file.write(json.dumps(data_in_json))
