@@ -18,6 +18,7 @@ if __name__ == "__main__":
 
     response_todos = requests.get(todos_id).json()
 
+    data_in_json = {} 
     for users_data in response_users:
         data_to_export = []
         username = users_data.get("username")
@@ -32,7 +33,6 @@ if __name__ == "__main__":
                                   "completed": tasks_completed}
                 data_to_export.append(data_formatted)
 
-        data_in_json = {} 
         data_in_json[users_data.get("id")] = data_to_export
 
     with open(filepath, "w") as file:
